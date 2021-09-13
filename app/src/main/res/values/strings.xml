@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Chess</string>
+    <string name="square_background_content_description">Background color of a square</string>
+    <string name="square_piece_content_description">Chess icon of a square</string>
+    <string name="single_player_button_text">Play Computer</string>
+    <string name="local_multi_player_button_text">Play Free-Play</string>
+    <string name="online_multi_player_button_text">Play Online</string>
+    <string name="color_checkbox_label_text">Play as</string>
+    <string name="difficulty_checkbox_label_text">Difficulty</string>
+    <string name="color_white_checkbox_text">White</string>
+    <string name="color_black_checkbox_text">Black</string>
+    <string name="difficulty_easy_checkbox_text">Easy</string>
+    <string name="difficulty_normal_checkbox_text">Normal</string>
+    <string name="difficulty_hard_checkbox_text">Hard</string>
+    <string name="start_button_text">Start</string>
+    <string name="multi_player_matchmaking_button_text">Join Matchmaking</string>
+    <string-array name="clock_config_spinner">
+        <item>∞</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="time_control_config_spinner">
+        <item>None</item>
+    </string-array>
+    <string-array name="time_control_config_spinner1">
+        <item>None</item>
+    </string-array>
+    <string name="rotate_grid">Rotate board</string>
+    <string name="clock_spinner_text">Clock</string>
+    <string name="time_control_spinner_text">Time Control</string>
+    <string name="requesting_location_updates_text">Allow location updates</string>
+    <string name="requesting_location_updates_key">REQUESTING_LOCATION_UPDATES_KEY</string>
+</resources>

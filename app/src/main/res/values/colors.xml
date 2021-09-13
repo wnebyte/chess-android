@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFF</color>
+    <color name="rect_light_fill">#fdcf9e</color>
+    <color name="rect_dark_fill">#d48948</color>
+    <color name="rect_light_stroke">#fdcf9e</color>
+    <color name="rect_dark_stroke">#d48948</color>
+    <color name="rect_light_queued_fill">#fdcf9e</color>
+    <color name="rect_light_queued_stroke">#38c722</color>
+    <color name="rect_dark_queued_fill">#d48948</color>
+    <color name="rect_dark_queued_stroke">#38c722</color>
+    <color name="rect_light_updated_fill">#a47831</color>
+    <color name="rect_light_updated_stroke">#a47831</color>
+    <color name="rect_dark_updated_fill">#9c6a23</color>
+    <color name="rect_dark_updated_stroke">#9c6a23</color>
+    <color name="piece_white_fill">#FFFFFF</color>
+    <color name="piece_black_fill">#000000</color>
+    <color name="piece_white_stroke">#000000</color>
+    <color name="piece_black_stroke">#000000</color>
+</resources>

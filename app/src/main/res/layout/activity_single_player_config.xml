@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        >
+
+        <TableRow
+            android:layout_gravity="center_vertical"
+            android:minHeight="45dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_span="1">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="5dp"
+                    android:src="@drawable/ic_baseline_palette_filled_24"
+                    app:tint="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/color_checkbox_label_text"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/whiteCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:checked="true"
+                android:text="@string/color_white_checkbox_text"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <CheckBox
+                android:id="@+id/blackCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:checked="false"
+                android:text="@string/color_black_checkbox_text"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center_vertical"
+            android:minHeight="45dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_span="1">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="5dp"
+                    android:src="@drawable/ic_baseline_grade_filled_24"
+                    app:tint="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/difficulty_checkbox_label_text"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/normalCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:checked="true"
+                android:text="@string/difficulty_normal_checkbox_text"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <CheckBox
+                android:id="@+id/hardCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:checked="false"
+                android:text="@string/difficulty_hard_checkbox_text"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center_vertical"
+            android:minHeight="45dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_span="1">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"
+                android:src="@drawable/ic_baseline_timer_filled_24"
+                app:tint="@color/black"/>
+
+            <TextView
+                android:labelFor="@+id/clockSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/clock_spinner_text"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:enabled="false"
+                />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/clockSpinner"
+                android:layout_column="3"
+                android:layout_span="3"
+                android:layout_gravity="center_vertical"
+                android:entries="@array/clock_config_spinner"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center_vertical"
+            android:minHeight="45dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_span="1">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="5dp"
+                    android:src="@drawable/ic_baseline_update_filled_24"
+                    app:tint="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/time_control_spinner_text"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:enabled="false" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/timeControlSpinner"
+                android:layout_column="3"
+                android:layout_span="3"
+                android:layout_gravity="center_vertical"
+                android:entries="@array/time_control_config_spinner"
+                android:clickable="false"
+                />
+
+            <!--
+            <Spinner
+                android:id="@+id/timeControlSpinner1"
+                android:layout_column="4"
+                android:layout_span="1"
+                android:layout_gravity="center_vertical"
+                android:entries="@array/time_control_config_spinner1"
+                android:clickable="false"
+                />
+            -->
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="@string/start_button_text"
+        app:layout_constraintBottom_toBottomOf="@+id/root"
+        app:layout_constraintEnd_toEndOf="@+id/root"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

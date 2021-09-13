@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/square"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="0pt">
+
+    <ImageView
+        android:id="@+id/square_background"
+        android:contentDescription="@string/square_background_content_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:padding="0pt" />
+
+    <TextView
+        android:id="@+id/square_row_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:padding="1dp"/>
+
+    <TextView
+        android:id="@+id/square_col_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:padding="1dp"/>
+
+    <ImageView
+        android:id="@+id/square_stroke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:padding="0pt"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/square_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:padding="0pt"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/square_chessPiece"
+        android:contentDescription="@string/square_piece_content_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:padding="1dp"/>
+
+
+</FrameLayout>

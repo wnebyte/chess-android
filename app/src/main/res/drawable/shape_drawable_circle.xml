@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:height="10dp" android:width="10dp" android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="@color/rect_light_queued_stroke"/>
+            <size android:width="3dp"
+                android:height="3dp"/>
+        </shape>
+    </item>
+
+</layer-list>
